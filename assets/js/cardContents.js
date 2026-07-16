@@ -3,7 +3,7 @@ function invitation() {
    <div class="invitation">
     <!-- TOP -->
     <h1 class="invitation__blessing">
-      Con la bendición de Dios
+      Con la bendición <br/> de Dios
       <br>
       y nuestros padres
     </h1>
@@ -259,7 +259,7 @@ function gratitude() {
 
   <!-- NAMES -->
   <h1 class="hero__title">
-    Cárolin & Enmanuel
+    Cárolin <br/> & <br/> Enmanuel
   </h1>
 
   <!-- DATE -->
@@ -326,7 +326,7 @@ function gift() {
 
   <!-- TITLE -->
   <h1 class="gifts__title">
-    Detalles para los novios
+    Detalles <br/> para los novios
   </h1>
 
   <!-- MESSAGE -->
