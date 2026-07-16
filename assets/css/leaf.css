@@ -1,0 +1,51 @@
+.leafs{
+  position:fixed;
+  inset:0;
+  overflow:hidden;
+  pointer-events:none;
+  z-index:1;
+}
+
+.leaf{
+  position:absolute;
+  animation:
+    leafFall linear infinite,
+    leafSwing ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+.leaf img{
+  width:100%;
+  display:block;
+  user-select:none;
+  filter:
+    drop-shadow(0 10px 12px rgba(0,0,0,.08));
+}
+
+/* FALL */
+@keyframes leafFall{
+
+  0%{
+    transform:
+      translate3d(0,-10vh,0)
+      rotate(0deg);
+  }
+
+  100%{
+    transform:
+      translate3d(var(--drift),110vh,0)
+      rotate(var(--rotate));
+  }
+}
+
+/* FLOATING MOTION */
+@keyframes leafSwing{
+
+  0%{
+    margin-left:-20px;
+  }
+
+  100%{
+    margin-left:20px;
+  }
+}

@@ -1,0 +1,191 @@
+/* =========================
+  CARD
+========================= */
+
+.fade-in-element {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform;
+  /* Optimiza el rendimiento */
+}
+
+/* Estado cuando el elemento es visible */
+.fade-in-element.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 40px 20px;
+  margin-top: 100px;
+}
+
+.card__container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  max-width: 600px;
+  position: relative;
+  width: 100%;
+}
+
+/* =========================
+  SHAPE
+========================= */
+
+.card__shape {
+  width: 100%;
+  aspect-ratio: 6 / 7;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 19px 20px 30px rgb(0 0 0);
+  background: #e6e6df;
+}
+
+/* =========================
+  PLANT
+========================= */
+
+.card__plant {
+  position: absolute;
+  width: 65%;
+  max-width: 400px;
+  left: -12%;
+  top: -7%;
+  pointer-events: none;
+}
+
+/* =========================
+  PAINT
+========================= */
+
+.card__img {
+  position: absolute;
+
+  width: 60%;
+  max-width: 400px;
+
+  z-index: -1;
+  pointer-events: none;
+}
+
+.card__img-1 {
+  left: -40%;
+  top: 60%;
+}
+
+.card__img-2 {
+  right: -5%;
+  top: 20%;
+}
+
+.card__img-3 {
+  left: -5%;
+  top: 10%;
+}
+
+.card_img-4 {
+  top: -10%;
+  right: -10%;
+  transform: rotate(45deg) scale(1.2);
+}
+
+/* =========================
+  TABLET
+========================= */
+
+@media screen and (max-width: 768px) {
+  .card {
+    margin-top: 80px;
+    padding: 30px 15px;
+  }
+
+  .card__container {
+    max-width: 450px;
+  }
+
+  .card__plant {
+    width: 60%;
+    left: -10%;
+    top: -8%;
+  }
+
+  .card__img {
+    width: 55%;
+  }
+
+  .card__img-1 {
+    left: -20%;
+    top: 70%;
+  }
+
+  .card__img-2 {
+    right: -20%;
+    top: 25%;
+  }
+
+  .card__img-3 {
+    left: -25%;
+    top: 8%;
+  }
+}
+
+/* =========================
+  MOBILE
+========================= */
+
+@media screen and (max-width: 480px) {
+  .card {
+    margin-top: 60px;
+    padding: 20px 12px;
+  }
+
+  #home {
+    margin-top: 60px;
+  }
+
+  .card__container {
+    max-width: 100%;
+  }
+
+  .card__shape {
+    border-top-left-radius: 180px;
+    border-top-right-radius: 180px;
+    box-shadow: 12px 10px 24px rgb(0 0 0 / 45%);
+    width: 100%;
+  }
+
+  .card__plant {
+    width: 50%;
+    left: -2%;
+    top: -4%;
+  }
+
+  .card__img {
+    width: 45%;
+    opacity: 0.75;
+  }
+
+  .card__img-1 {
+    left: -12%;
+    top: 72%;
+  }
+
+  .card__img-2 {
+    right: -12%;
+    top: 22%;
+  }
+
+  .card__img-3 {
+    left: -14%;
+    top: 5%;
+  }
+}

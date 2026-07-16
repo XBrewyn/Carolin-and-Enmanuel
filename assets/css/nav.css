@@ -1,0 +1,143 @@
+/* =========================
+  NAVBAR
+========================= */
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: fixed;
+  background: #e9e7e21a;
+  box-shadow: 0 10px 30px rgb(0 0 0 / 15%);
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+/* =========================
+  LOGO
+========================= */
+
+.navbar__logo-img {
+  width: 80px;
+  object-fit: contain;
+}
+
+/* =========================
+  TOGGLE
+========================= */
+
+.navbar__toggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  height: 45px;
+  justify-content: center;
+  width: 45px;
+  z-index: 20;
+}
+
+.navbar__toggle-line {
+  width: 100%;
+  height: 2px;
+
+  background: #000000;
+
+  transition: 0.3s ease;
+}
+
+/* ACTIVE */
+.navbar__toggle--active .navbar__toggle-line:nth-child(1) {
+  transform: rotate(45deg) translateY(11px);
+}
+
+.navbar__toggle--active .navbar__toggle-line:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar__toggle--active .navbar__toggle-line:nth-child(3) {
+  transform: rotate(-45deg) translateY(-11px);
+}
+
+/* =========================
+  MENU
+========================= */
+
+.navbar__menu {
+  background: #e9e7e2;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgb(0 0 0 / 15%);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 20px;
+  opacity: 0;
+  padding: 20px;
+  position: absolute;
+  right: 20px;
+  top: 100%;
+  transform: translateY(-10px);
+  transition: 0.3s ease;
+  visibility: hidden;
+  width: 220px;
+  z-index: 10;
+}
+
+/* SHOW MENU */
+.navbar__menu--show {
+  opacity: 1;
+  visibility: visible;
+
+  transform: translateY(0);
+}
+
+/* =========================
+  MENU ITEM
+========================= */
+
+.navbar__menu-item {
+  text-decoration: none;
+
+  color: #5d5d56;
+
+  font-size: 20px;
+
+  transition: 0.3s ease;
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    padding: 0 12px;
+  }
+
+  .navbar__logo-img {
+    width: 64px;
+  }
+
+  .navbar__menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+    left: 0;
+    right: 0;
+    top: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+    width: 100%;
+    gap: 12px 16px;
+    padding: 16px 12px;
+  }
+
+  .navbar__menu-item {
+    font-size: 16px;
+  }
+
+  .navbar__menu-item:hover {
+    opacity: 0.7;
+  }
+}

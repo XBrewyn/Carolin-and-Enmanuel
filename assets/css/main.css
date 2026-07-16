@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: #ecebe7;
+  font-family: fantasy;
+}
+
+html, body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#home,
+#invitation,
+#ceremony,
+#reception,
+#dresscode,
+#gallery,
+#gift,
+#confirmation,
+#gratitude,
+#ending {
+  scroll-margin-top: 200px;
+}

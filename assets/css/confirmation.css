@@ -1,0 +1,199 @@
+/* =========================
+   CONFIRMATION
+========================= */
+
+.confirmation{
+  width: 100%;
+  max-width: 700px;
+
+  background: #e9e7e2;
+
+  border-top-left-radius: 320px;
+  border-top-right-radius: 320px;
+
+  padding: 80px 70px 100px;
+
+  text-align: center;
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.confirmation__title{
+  font-family: 'Great Vibes', cursive;
+
+  font-size: 60px;
+  font-weight: 400;
+
+  line-height: 1.1;
+
+  color: #5d5d56;
+
+  margin-bottom: 70px;
+}
+
+/* =========================
+   MESSAGE
+========================= */
+
+.confirmation__message{
+  font-size: 34px;
+  line-height: 1.3;
+
+  color: #66665f;
+
+  margin-bottom: 70px;
+}
+
+/* =========================
+   NAME
+========================= */
+
+.confirmation__name{
+  font-family: 'Great Vibes', cursive;
+
+  font-size: 44px;
+  font-weight: 400;
+
+  color: #6b6b63;
+
+  margin-bottom: 55px;
+}
+
+/* =========================
+   RESERVED
+========================= */
+
+.confirmation__reserved{
+  font-size: 34px;
+
+  color: #66665f;
+
+  margin-bottom: 80px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.confirmation__button{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: auto;
+  min-width: 240px;
+  max-width: 100%;
+  height: auto;
+  padding: 18px 40px;
+
+  border-radius: 999px;
+
+  background: #6c7064;
+
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 26px;
+  font-weight: 600;
+  white-space: nowrap;
+
+  transition: 0.3s ease;
+}
+
+.confirmation__button:hover{
+  opacity: 0.8;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media screen and (max-width: 768px){
+
+  .confirmation{
+    padding: 60px 25px 80px;
+
+    border-top-left-radius: 220px;
+    border-top-right-radius: 220px;
+  }
+
+  .confirmation__title{
+    font-size: 46px;
+
+    margin-bottom: 50px;
+  }
+
+  .confirmation__message{
+    font-size: 24px;
+
+    margin-bottom: 50px;
+  }
+
+  .confirmation__name{
+    font-size: 34px;
+
+    margin-bottom: 40px;
+  }
+
+  .confirmation__reserved{
+    font-size: 24px;
+
+    margin-bottom: 55px;
+  }
+
+  .confirmation__button{
+    padding: 14px 32px;
+    min-width: 200px;
+    font-size: 20px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media screen and (max-width: 480px){
+
+  .confirmation{
+    padding: 50px 18px 60px;
+
+    border-top-left-radius: 160px;
+    border-top-right-radius: 160px;
+  }
+
+  .confirmation__title{
+    font-size: 32px;
+    line-height: 1.15;
+    margin-bottom: 28px;
+  }
+
+  .confirmation__message{
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 28px;
+  }
+
+  .confirmation__name{
+    font-size: 26px;
+    margin-bottom: 24px;
+  }
+
+  .confirmation__reserved{
+    font-size: 15px;
+    line-height: 1.45;
+    margin-bottom: 32px;
+  }
+
+  .confirmation__button{
+    padding: 12px 22px;
+    min-width: 0;
+    width: 100%;
+    max-width: 280px;
+    font-size: 15px;
+    white-space: normal;
+    text-align: center;
+  }
+}

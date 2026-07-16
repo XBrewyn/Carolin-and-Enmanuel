@@ -1,0 +1,184 @@
+/* =========================
+  INVITATION
+========================= */
+
+.invitation {
+  width: 100%;
+  max-width: 700px;
+
+  background: #efede8;
+
+  border-top-left-radius: 320px;
+  border-top-right-radius: 320px;
+
+  padding: 80px 70px 100px;
+
+  text-align: center;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+/* =========================
+  TOP TEXT
+========================= */
+
+.invitation__blessing {
+  font-family: 'Great Vibes', cursive;
+
+  font-size: 48px;
+  line-height: 1.4;
+
+  color: #5c5c5c;
+
+  margin-bottom: 80px;
+}
+
+/* =========================
+  PARENTS
+========================= */
+
+.invitation__parents {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.invitation__parents-group {
+  flex: 1;
+}
+
+.invitation__parent-name {
+  font-size: 22px;
+  font-weight: 500;
+
+  line-height: 1.3;
+
+  text-transform: uppercase;
+}
+
+.invitation__parent-role {
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+/* =========================
+  COUPLE IMAGE
+========================= */
+
+.invitation__couple {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.invitation__couple-img {
+  width: min(400px, 100%);
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* =========================
+  BOTTOM MESSAGE
+========================= */
+
+.invitation__message {
+  font-family: 'Great Vibes', cursive;
+
+  font-size: 42px;
+  line-height: 1.5;
+
+  color: #5c5c5c;
+
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* =========================
+  TABLET
+========================= */
+
+@media screen and (max-width: 768px) {
+
+  .invitation {
+    padding: 60px 25px 80px;
+
+    border-top-left-radius: 220px;
+    border-top-right-radius: 220px;
+  }
+
+  .invitation__blessing {
+    font-size: 34px;
+    margin-bottom: 60px;
+  }
+
+  .invitation__parents {
+    flex-direction: column;
+    gap: 40px;
+
+    margin-bottom: 70px;
+  }
+
+  .invitation__parent-name {
+    font-size: 18px;
+  }
+
+  .invitation__parent-role {
+    font-size: 18px;
+  }
+
+  .invitation__couple-img {
+    width: min(280px, 70%);
+  }
+
+  .invitation__message {
+    font-size: 30px;
+    max-width: 100%;
+  }
+}
+
+/* =========================
+  MOBILE
+========================= */
+
+@media screen and (max-width: 480px) {
+
+  .invitation {
+    padding: 50px 18px 60px;
+    border-top-left-radius: 160px;
+    border-top-right-radius: 160px;
+  }
+
+  .invitation__blessing {
+    font-size: 26px;
+    line-height: 1.4;
+
+    margin-bottom: 40px;
+  }
+
+  .invitation__parents {
+    gap: 28px;
+    margin-bottom: 16px;
+  }
+
+  .invitation__parent-name {
+    font-size: 14px;
+    line-height: 1.35;
+    overflow-wrap: break-word;
+  }
+
+  .invitation__parent-role {
+    font-size: 14px;
+  }
+
+  .invitation__couple-img {
+    width: min(220px, 80%);
+  }
+
+  .invitation__message {
+    font-size: 20px;
+    line-height: 1.55;
+  }
+}
