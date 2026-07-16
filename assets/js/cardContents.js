@@ -380,9 +380,7 @@ function confirmation() {
 
   <!-- MESSAGE -->
   <p class="confirmation__message">
-    Amamos a sus hijos pero <br/> creemos que
-    necesitan una noche libre para ustedes, <br/>
-    solo adultos por favor "No niños"
+    Los niños son muy especiales, <br/> pero esta vez no podrán acompañarnos, <br/> los dejaremos para una próxima actividad, <br/> esta celebración será solo para adultos.
   </p>
 
     <!-- RESERVED -->
