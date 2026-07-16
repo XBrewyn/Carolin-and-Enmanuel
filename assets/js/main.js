@@ -48,7 +48,6 @@ window.addEventListener('load', () => {
   Card({
     id: 'home',
     style: {
-      plant: { top: '-12%' },
       shape: {
         backgroundImage: 'url(./assets/imgs/couple3.jpeg)',
         backgroundRepeat: 'no-repeat',
@@ -144,9 +143,8 @@ window.addEventListener('load', () => {
   Card({
     id: 'ending',
     style: {
-      plant: { top: '-12%' },
       shape: {
-        backgroundImage: 'url(./assets/imgs/couple8.jpeg)',
+        backgroundImage: 'url(./assets/imgs/couple10.jpeg)',
         backgroundRepeat: 'no-repeat',
         backgroundSize: '100% 100%',
       }

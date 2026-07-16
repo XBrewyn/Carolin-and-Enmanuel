@@ -331,7 +331,7 @@ function gift() {
 
   <!-- MESSAGE -->
   <p class="gifts__message">
-    Más que regalos, valoramos su compañía.
+    Más que regalos, <br/>valoramos su compañía.
     Pero si desean bendecirnos con un detalle,
     agradeceremos que sea en efectivo o transferencia.
   </p>
@@ -372,7 +372,7 @@ function confirmation() {
   <!-- MESSAGE -->
   <p class="confirmation__message">
     Amamos a sus hijos pero creemos que
-    necesitan una noche libre para ustedes,
+    necesitan una noche libre para ustedes, <br/>
     solo adultos por favor "No niños"
   </p>
 
