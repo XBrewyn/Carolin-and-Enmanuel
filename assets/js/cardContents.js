@@ -352,6 +352,15 @@ function gift() {
       <br/> 
       Cédula: 402-2750915-1
     </p>
+
+    <p class="gifts__event">
+
+  Cuenta: Corriente / 840888861 
+  <br/>
+  Beneficiario: Cárolin Yainés Kingsley Reyes
+  <br/>
+Cédula: 402-1998412-3
+    </p>
   </div>
 </section> 
   `;
@@ -371,7 +380,7 @@ function confirmation() {
 
   <!-- MESSAGE -->
   <p class="confirmation__message">
-    Amamos a sus hijos pero creemos que
+    Amamos a sus hijos pero <br/> creemos que
     necesitan una noche libre para ustedes, <br/>
     solo adultos por favor "No niños"
   </p>

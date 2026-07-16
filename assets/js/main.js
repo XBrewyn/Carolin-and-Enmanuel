@@ -143,6 +143,7 @@ window.addEventListener('load', () => {
   Card({
     id: 'ending',
     style: {
+      plant: { top: '-0%',  left: '-10%' },
       shape: {
         backgroundImage: 'url(./assets/imgs/couple10.jpeg)',
         backgroundRepeat: 'no-repeat',
