@@ -1,10 +1,10 @@
 function Envelope(style = {}) {
-  //     <source src="./assets/music/contigo.mp3" type="audio/mp3">
 
   const envelope = Tool.el('section', 'envelope', `
     
     <!-- AUDIO -->
     <audio id="music" loop>
+      <source src="./assets/music/contigo.mp3" type="audio/mp3">
     </audio>
 
     <!-- RIGHT -->
