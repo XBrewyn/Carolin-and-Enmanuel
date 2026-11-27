@@ -44,8 +44,8 @@ function invitation() {
 
     <!-- IMAGE -->
     <div class="invitation__couple">
-    <img 
-      src="./assets/imgs/couple.png" 
+    <img loading="lazy" decoding="async" 
+      src="./assets/imgs/couple.webp" 
       alt="Couple" 
       class="invitation__couple-img"
     >
@@ -72,7 +72,7 @@ function place({
   year = '2026',
   hour = '06:00 PM',
 
-  image = './assets/imgs/church2.png',
+  image = './assets/imgs/chruch2.webp',
 
   subtitle = 'CEREMONIA',
 
@@ -153,7 +153,7 @@ function place({
       </div>
 
       <!-- IMAGE -->
-      <img 
+      <img loading="lazy" decoding="async" 
         src="${image}"
         alt="Place"
         class="place__image"
@@ -198,8 +198,8 @@ function dresscode() {
   <!-- OUTFITS -->
   <div class="dresscode__outfits">
 
-    <img 
-      src="./assets/imgs/couple2.png" 
+    <img loading="lazy" decoding="async" 
+      src="./assets/imgs/couple2.webp" 
       alt="Dress"
       class="dresscode__image"
     >
@@ -227,20 +227,20 @@ function gallery() {
 
     <div class="gallery__track">
 
-      <img 
-        src="./assets/imgs/couple6.jpeg"
+      <img loading="lazy" decoding="async" 
+        src="./assets/imgs/couple6.webp"
         class="gallery__image"
         alt="Gallery Image"
       >
 
-      <img 
-        src="./assets/imgs/couple7.jpeg"
+      <img loading="lazy" decoding="async" 
+        src="./assets/imgs/couple7.webp"
         class="gallery__image"
         alt="Gallery Image"
       >
 
-      <img 
-        src="./assets/imgs/couple5.jpeg"
+      <img loading="lazy" decoding="async" 
+        src="./assets/imgs/couple5.webp"
         class="gallery__image"
         alt="Gallery Image"
       >
@@ -339,8 +339,8 @@ function gift() {
   <!-- ITEM -->
   <div class="gifts__item">
 
-    <img 
-      src="./assets/imgs/banco.jpg"
+    <img loading="lazy" decoding="async" 
+      src="./assets/imgs/banco.webp"
       alt="popular"
       class="gifts__logo"
     >

@@ -6,7 +6,7 @@ function Nav(menu = []) {
       class="navbar__logo"
     >
       <img 
-        src="./assets/imgs/logo2.png" 
+        src="./assets/imgs/logo2.webp" 
         alt="Logo" 
         class="navbar__logo-img"
       />
