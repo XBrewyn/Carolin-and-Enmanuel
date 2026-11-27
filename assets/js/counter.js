@@ -42,6 +42,8 @@ function Counter({ style = {}, title, time }) {
   const minutesEl = counter.querySelector('.js-minutes');
   const secondsEl = counter.querySelector('.js-seconds');
   const targetDate = new Date(time).getTime();
+  // Declared before the first update: if the date already passed, that first call stops it.
+  let interval = null;
 
   function updateCounter() {
     const now = Date.now();
@@ -53,8 +55,9 @@ function Counter({ style = {}, title, time }) {
       minutesEl.textContent = '00';
       secondsEl.textContent = '00';
 
-      clearInterval(interval);
-      return;
+      if (interval) clearInterval(interval);
+      interval = null;
+      return false;
     }
 
     const days = Math.floor(
@@ -79,11 +82,11 @@ function Counter({ style = {}, title, time }) {
     hoursEl.textContent = String(hours).padStart(2, '0');
     minutesEl.textContent = String(minutes).padStart(2, '0');
     secondsEl.textContent = String(seconds).padStart(2, '0');
+    return true;
   }
 
-  updateCounter();
-
-  const interval = setInterval(updateCounter, 1000);
+  // Ticks every second only while the date is still ahead.
+  if (updateCounter() !== false) interval = setInterval(updateCounter, 1000);
 
   return counter;
 }
