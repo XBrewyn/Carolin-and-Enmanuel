@@ -37,7 +37,7 @@ function Leaf(len = 12) {
   const component = Tool.el('div', 'leafs', `
     ${[...Array(len)].map(() => `
       <div class="leaf" style="${getStyle()}">
-        <img src="./assets/imgs/leaf.png" alt="leaf">
+        <img src="./assets/imgs/leaf.webp" alt="leaf">
       </div>
     `).join('')}
   `);

@@ -3,7 +3,7 @@ function Envelope(style = {}) {
   const envelope = Tool.el('section', 'envelope', `
     
     <!-- AUDIO -->
-    <audio id="music" loop>
+    <audio id="music" loop preload="none">
       <source src="./assets/music/contigo.mp3" type="audio/mp3">
     </audio>
 
@@ -30,7 +30,7 @@ function Envelope(style = {}) {
     <!-- SEAL -->
     <div class="envelope__seal" id="seal">
       <img 
-        src="./assets/imgs/knob2.png" 
+        src="./assets/imgs/knob2.webp" 
         class="envelope__knob"
       >
     </div>

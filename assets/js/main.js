@@ -49,7 +49,7 @@ window.addEventListener('load', () => {
     id: 'home',
     style: {
       shape: {
-        backgroundImage: 'url(./assets/imgs/couple3.jpeg)',
+        backgroundImage: 'url(./assets/imgs/couple3.webp)',
         backgroundRepeat: 'no-repeat',
         backgroundSize: '100% 100%',
       }
@@ -75,7 +75,7 @@ window.addEventListener('load', () => {
       day: '27',
       year: '2026',
       hour: '06:00 PM',
-      image: './assets/imgs/chruch2.png',
+      image: './assets/imgs/chruch2.webp',
       subtitle: '',
       place: 'Iglesia Cristiana Cielos Abiertos',
       address: `
@@ -99,7 +99,7 @@ window.addEventListener('load', () => {
       day: '27',
       year: '2026',
       hour: '07:00 PM',
-      image: './assets/imgs/hotel.jpg',
+      image: './assets/imgs/hotel.webp',
       subtitle: '',
       place: 'Hotel Grand Marien',
       address: `
@@ -145,7 +145,7 @@ window.addEventListener('load', () => {
     style: {
       plant: { top: '-0%',  left: '-10%' },
       shape: {
-        backgroundImage: 'url(./assets/imgs/couple10.jpeg)',
+        backgroundImage: 'url(./assets/imgs/couple10.webp)',
         backgroundRepeat: 'no-repeat',
         backgroundSize: '100% 100%',
       }
